@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/signon">
+	<TableRow>
+	    <TextView 
+        	android:text="Username"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.0" />
+	    <EditText 
+	        android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="2.0"
+        	android:id="@+id/username"
+        	android:inputType="textEmailAddress"
+	        />
+	</TableRow>
+    <TableRow>
+	    <TextView 
+        	android:text="Password"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1.0" />
+	    <EditText 
+	        android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="2.0"
+        	android:id="@+id/password"
+        	android:inputType="textPassword"
+	        />
+	</TableRow>
+	<TableRow
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+	    <LinearLayout 
+	       android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+	        <CheckBox 
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/savePwd"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="1.0"
+        	    android:text="Save Password (In encrypted clear text)"
+	            />
+	        
+	    </LinearLayout>
+	</TableRow>
+	<TableRow
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+	    <TextView 
+        	android:text="Please Log In"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/message_login"/>
+	</TableRow>
+	<TableRow android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center">
+	    <Button 
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" 
+        android:text="Log In"/>
+	</TableRow>
+
+</TableLayout>
